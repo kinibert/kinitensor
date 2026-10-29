@@ -4,14 +4,14 @@ It provides a high-level, easy to use API for building and training neural netwo
 Please note that this project is only for educational purposes and is not intended for production use.
 It is NOT optimized for speed or efficiency.
 
-# Installation
+## Installation
 You can install KiniTensor using pip:
 
 ```bash
 pip install git+https://github.com/kinibert/kinitensor
 ```
 
-# Features
+## Features
 - **Modular Architecture:** A neural network is defined by a list of Layer Objects.
 - Activation Functions, Loss Function and Initialisation Functions can be easily changed.
 - **Multi-Layer Perceptron:** The type of neural network available in KiniTensor
@@ -20,7 +20,7 @@ pip install git+https://github.com/kinibert/kinitensor
 - **Implementation in NumPy:** The complete logic part was implemented from scratch using only NumPy.
   The scikit-learn dependency is only used for getting training data and evaluating an example model on the MNIST Dataset.
 
-# Tutorial
+## Tutorial
 To create a Neural Network (Multi-Layer Perception is currently the only supported type), you need to import:
 - Activation function (imported with `import kinitensor.activation_functions`)
 - Loss function (imported with `import kinitensor.loss_functions`)
@@ -35,7 +35,7 @@ The list defines the architecture of the Network, where each list item correspon
 - The number of output neurons of a layer MUST be the same as the number of input neurons from the previous layer
 - The last layer MUST be an `OutputLayer`
 
-# MNIST Results
+## MNIST Results
 **Note:** To reproduce these results, clone this repository, install all dependencies and run `test.py` 
 
 **Architecture:**  
@@ -49,7 +49,7 @@ Input (784 Inputs) -> Dense Layer (LeakyReLU Activation, 128 Neurons) -> Dense L
 | Parameters | 13.008 |
 | **Total accuracy** | **98,04%**  |
 
-# Example
+## Example
 Here is a small Neural Network with 2 hidden layers and around 13.000 parameters:
 
 ```python
