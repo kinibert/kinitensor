@@ -5,5 +5,7 @@ requires-python = ">=3.14"
 license = "LGPL-3.0-or-later"
 description = "A simple deep learning library for educational purposes."
 dependencies = [
-    'numpy'
+    'numpy',
+    'tqdm',
+    "scikit-learn"
 ]
